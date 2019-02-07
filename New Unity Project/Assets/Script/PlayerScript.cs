@@ -20,9 +20,7 @@ public class PlayerScript : MonoBehaviour
     void shot()
     {
         bool shoot = Input.GetButtonDown("Fire1");
-        shoot |= Input.GetButtonDown("Fire2");
-        // Astuce pour ceux sous Mac car Ctrl + flèches est utilisé par le système
-
+       
         if (shoot)
         {
             WeaponScript weapon = GetComponent<WeaponScript>();
@@ -30,6 +28,7 @@ public class PlayerScript : MonoBehaviour
             {
                 // false : le joueur n'est pas un ennemi
                 weapon.Attack(false);
+                Sound.Instance.MakePlayerShotSound();
             }
         }
     }     

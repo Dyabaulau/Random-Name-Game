@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - ground
+  - Melee
   layers:
   - Default
   - TransparentFX

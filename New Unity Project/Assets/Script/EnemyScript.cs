@@ -32,7 +32,7 @@ public class EnemyScript : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(xMoveDirection, 0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(xMoveDirection, 0) * speed;
-        if (hit.distance < 0.1f)
+        if (hit.distance < 0.3f)
            Flip();
     
         foreach (WeaponScript weapon in weapons)

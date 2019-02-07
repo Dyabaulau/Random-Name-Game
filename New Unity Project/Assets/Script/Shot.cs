@@ -7,13 +7,10 @@ using UnityEngine;
 /// <summary>
 /// Comportement des tirs
 /// </summary>
+/// 
 public class Shot : MonoBehaviour
 {
-    // 1 - Designer variables
-
-    /// <summary>
-    /// Points de dégâts infligés
-    /// </summary>
+    
     public int damage = 1;
 
     /// <summary>
@@ -32,7 +29,12 @@ public class Shot : MonoBehaviour
     void Start()
     {
         // 2 - Destruction programmée
-        Destroy(gameObject, 10); // 10 sec
+        if (gameObject.tag == "Melee")
+            Destroy(gameObject, 0.05f);
+        else
+        {
+            Destroy(gameObject,10);
+        }
 
     }
 }

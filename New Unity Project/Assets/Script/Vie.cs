@@ -33,7 +33,17 @@ public class Vie : MonoBehaviour
                 if (hp <= 0)
                 {
                     // Destruction !
-                    Destroy(gameObject);
+                    if (transform.gameObject.tag == "player")
+                    {
+                        Sound.Instance.DeathSound();
+                        Destroy(gameObject);
+                    }
+                    else
+                    {
+                        Sound.Instance.MakeCreepDeath();
+                        Destroy(gameObject);
+                    }
+                    
                 }
             }
         }

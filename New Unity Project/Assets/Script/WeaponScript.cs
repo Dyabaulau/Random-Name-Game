@@ -2,29 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Crée des projectiles
-/// </summary>
+
 public class WeaponScript : MonoBehaviour
 {
-    //--------------------------------
-    // 1 - Designer variables
-    //--------------------------------
-
-    /// <summary>
-    /// Prefab du projectile
-    /// </summary>
+ 
     public Transform shotPrefab;
-
-    /// <summary>
-    /// Temps de rechargement entre deux tirs
-    /// </summary>
+    public bool facingRight = true;   
     public float shootingRate = 0.25f;
 
+    
     //--------------------------------
     // 2 - Rechargement
     //--------------------------------
-
     private float shootCooldown;
 
     void Start()
@@ -38,46 +27,48 @@ public class WeaponScript : MonoBehaviour
         {
             shootCooldown -= Time.deltaTime;
         }
+        PlayerScript dir = transform.GetComponent<PlayerScript>();
+        if (facingRight != dir.facingRight)
+            Flip();
     }
 
-    //--------------------------------
-    // 3 - Tirer depuis un autre script
-    //--------------------------------
-
-    /// <summary>
-    /// Création d'un projectile si possible
-    /// </summary>
+    
+    
     public void Attack(bool isEnemy)
     {
         if (CanAttack)
         {
-            shootCooldown = shootingRate;
-
-            // Création d'un objet copie du prefab
+            shootCooldown = shootingRate;           
             var shotTransform = Instantiate(shotPrefab) as Transform;
+            if (shotPrefab.tag == "Melee"  && facingRight == true)
+            {
+                
+                shotTransform.position = new Vector3( transform.position.x +0.15f,transform.position.y,transform.position.z);
+                
 
-            // Position
-            shotTransform.position = transform.position;
+            }
+            else if (shotPrefab.tag == "Melee"  && facingRight == false)
+            {
+                shotTransform.position = new Vector3( transform.position.x -0.15f,transform.position.y,transform.position.z);
+            }
+            else
+            {
+                shotTransform.position = transform.position;
+            }
+                
 
-            // Propriétés du script
             Shot shot = shotTransform.gameObject.GetComponent<Shot>();
+
             if (shot != null)
             {
                 shot.isEnemyShot = isEnemy;
             }
-
-            // On saisit la direction pour le mouvement
-            MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
-            if (move != null)
-            {
-                move.direction = this.transform.right; // ici la droite sera le devant de notre objet
-            }
+            
+            
         }
     }
 
-    /// <summary>
-    /// L'arme est chargée ?
-    /// </summary>
+  
     public bool CanAttack
     {
         get
@@ -85,4 +76,10 @@ public class WeaponScript : MonoBehaviour
             return shootCooldown <= 0f;
         }
     }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        shotPrefab.Rotate(0f, 180f, 0f);
+    }
+    
 }
