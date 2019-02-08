@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7048cc34dbc78ff46aa239201abc7954
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerShotSound: {instanceID: 0}
+  - Death: {fileID: 8300000, guid: fba9e415934993b49a6633a930bf56b1, type: 3}
+  - CreepDeath: {fileID: 8300000, guid: c53c3a1e6673c854ca377ae895b40a92, type: 3}
+  - Warcry: {fileID: 8300000, guid: 02acd3df71f47954c8c965281f285875, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
