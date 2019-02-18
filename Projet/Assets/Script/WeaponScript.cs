@@ -2,84 +2,101 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class WeaponScript : MonoBehaviour
+namespace BestMasterYi
 {
- 
-    public Transform shotPrefab;
-    public bool facingRight = true;   
-    public float shootingRate = 0.25f;
 
-    
-    //--------------------------------
-    // 2 - Rechargement
-    //--------------------------------
-    private float shootCooldown;
 
-    void Start()
+
+    public class WeaponScript : MonoBehaviour
     {
-        shootCooldown = 0f;
-    }
 
-    void Update()
-    {
-        if (shootCooldown > 0)
+        public Transform shotPrefab;
+        public Transform shotPrefab2;
+        public bool facingRight = true;
+        public float shootingRate = 0.25f;
+
+
+
+        //--------------------------------
+        // 2 - Rechargement
+        //--------------------------------
+        private float shootCooldown;
+
+        void Start()
         {
-            shootCooldown -= Time.deltaTime;
+            shootCooldown = 0f;
         }
-        PlayerScript dir = transform.GetComponent<PlayerScript>();
-        if (facingRight != dir.facingRight)
-            Flip();
-    }
 
-    
-    
-    public void Attack(bool isEnemy)
-    {
-        if (CanAttack)
+        void Update()
         {
-            shootCooldown = shootingRate;           
-            var shotTransform = Instantiate(shotPrefab) as Transform;
-            if (shotPrefab.tag == "Melee"  && facingRight == true)
+            if (shootCooldown > 0)
             {
-                
-                shotTransform.position = new Vector3( transform.position.x +0.18f,transform.position.y,transform.position.z);
-                
+                shootCooldown -= Time.deltaTime;
+            }
+
+            PlayerScript dir = GetComponent<PlayerScript>();
+            if (facingRight != dir.facingRight)
+                Flip();
+        }
+
+
+
+        public void Attack(bool isEnemy)
+        {
+            if (CanAttack)
+            {
+                shootCooldown = shootingRate;
+                PlayerScript shotType = GetComponent<PlayerScript>();
+
+
+                if (shotType.timer >= shotType.startTime)
+                {
+                    var shotTransform = Instantiate(shotPrefab2) as Transform;
+                    AttackType(shotTransform);
+                }
+                else
+                {
+                    var shotTransform1 = Instantiate(shotPrefab) as Transform;
+                    AttackType(shotTransform1);
+                }
+
 
             }
-            else if (shotPrefab.tag == "Melee"  && facingRight == false)
+        }
+
+        void AttackType(Transform t)
+        {
+            if (t.tag == "Melee" && facingRight)
             {
-                shotTransform.position = new Vector3( transform.position.x -0.18f,transform.position.y,transform.position.z);
+                t.position = new Vector3(transform.position.x + 0.18f, transform.position.y, transform.position.z);
+            }
+            else if (t.tag == "Melee" && facingRight == false)
+            {
+                t.position = new Vector3(transform.position.x - 0.18f, transform.position.y, transform.position.z);
             }
             else
             {
-                shotTransform.position = transform.position;
+                t.position = transform.position;
             }
-                
 
-            Shot shot = shotTransform.gameObject.GetComponent<Shot>();
+            Shot shot = t.gameObject.GetComponent<Shot>();
 
             if (shot != null)
             {
-                shot.isEnemyShot = isEnemy;
+                shot.isEnemyShot = t;
             }
-            
-            
         }
-    }
 
-  
-    public bool CanAttack
-    {
-        get
+        public bool CanAttack
         {
-            return shootCooldown <= 0f;
+            get { return shootCooldown <= 0f; }
         }
+
+        void Flip()
+        {
+            facingRight = !facingRight;
+            shotPrefab.Rotate(0f, 180f, 0f);
+        }
+
     }
-    void Flip()
-    {
-        facingRight = !facingRight;
-        shotPrefab.Rotate(0f, 180f, 0f);
-    }
-    
 }

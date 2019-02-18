@@ -361,6 +361,49 @@ MonoBehaviour:
   Death: {fileID: 8300000, guid: fba9e415934993b49a6633a930bf56b1, type: 3}
   CreepDeath: {fileID: 8300000, guid: c53c3a1e6673c854ca377ae895b40a92, type: 3}
   Warcry: {fileID: 8300000, guid: 02acd3df71f47954c8c965281f285875, type: 3}
+--- !u!1 &233036959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233036961}
+  - component: {fileID: 233036960}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233036960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233036959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d4a9539ff6099448a4a45b317974d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &233036961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233036959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5444493, y: 0.38814294, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &282789586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,6 +1805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 7093506261216933313, guid: b3d3443e75696264686584f8429d2ec2,
     type: 3}
+  shotPrefab2: {fileID: 7339689191114626214, guid: a3147e30b2deae24394e2f645e8a7460,
+    type: 3}
   facingRight: 1
   shootingRate: 0.25
 --- !u!114 &1552576092
@@ -1794,6 +1839,8 @@ MonoBehaviour:
   playerJumpPower: 200
   grounded: 0
   facingRight: 1
+  startTime: 0
+  timer: 0
 --- !u!1 &1573420476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 1468955374493378578, guid: 35024042341703e468ac42a85bb9e29c,
     type: 3}
+  shotPrefab2: {fileID: 0}
   facingRight: 1
   shootingRate: 2
 --- !u!114 &4883774339789504516
