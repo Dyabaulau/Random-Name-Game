@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="935d1178-da30-42e3-9701-84db5bd2958c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/melee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/melee.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CameraSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CameraSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnemyScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MoveScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MoveScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Shot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Shot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Sound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Vie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Vie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/WeaponScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/WeaponScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Collab/CollabSnapshot_9cec6b3a-3d7b-40e3-878b-b6f6c2c2a0fe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Collab/CollabSnapshot_9cec6b3a-3d7b-40e3-878b-b6f6c2c2a0fe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/cdb01d-b3d3443e7569626468.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/cdb01d-b3d3443e7569626468.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/617f2e-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/617f2e-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/54/54303c7a7125bc04b8865abefa475377" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/54/54303c7a7125bc04b8865abefa475377" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/54/54303c7a7125bc04b8865abefa475377.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/54/54303c7a7125bc04b8865abefa475377.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5d/5d3facb8c3bedb640b9f4e5483f87bea" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5d/5d3facb8c3bedb640b9f4e5483f87bea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5d/5d3facb8c3bedb640b9f4e5483f87bea.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5d/5d3facb8c3bedb640b9f4e5483f87bea.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7048cc34dbc78ff46aa239201abc7954" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7048cc34dbc78ff46aa239201abc7954" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7048cc34dbc78ff46aa239201abc7954.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7048cc34dbc78ff46aa239201abc7954.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7054b9b64e4179f498400ae8d354fefe" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7054b9b64e4179f498400ae8d354fefe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/70/7054b9b64e4179f498400ae8d354fefe.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/70/7054b9b64e4179f498400ae8d354fefe.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/b1/b124771d8b265984aadb0ac5f1d9d57e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b1/b124771d8b265984aadb0ac5f1d9d57e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/b1/b124771d8b265984aadb0ac5f1d9d57e.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b1/b124771d8b265984aadb0ac5f1d9d57e.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/b3/b3d3443e75696264686584f8429d2ec2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b3/b3d3443e75696264686584f8429d2ec2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e5/e542a142bb6b4a842b93ae5d82a42635" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e5/e542a142bb6b4a842b93ae5d82a42635" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e5/e542a142bb6b4a842b93ae5d82a42635.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e5/e542a142bb6b4a842b93ae5d82a42635.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/eb/eb95bd9b1ea883846b1254533523752e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/eb/eb95bd9b1ea883846b1254533523752e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/eb/eb95bd9b1ea883846b1254533523752e.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/eb/eb95bd9b1ea883846b1254533523752e.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f1a4307ad97879749a2286ca8f4bd3d4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f1/f1a4307ad97879749a2286ca8f4bd3d4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f1a4307ad97879749a2286ca8f4bd3d4.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f1/f1a4307ad97879749a2286ca8f4bd3d4.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +14,7 @@
     <session id="-720512239">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -338,7 +282,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -405,12 +349,12 @@
       <workItem from="1550393620464" duration="2092000" />
       <workItem from="1550473750381" duration="9000" />
       <workItem from="1550473821995" duration="2349000" />
-      <workItem from="1550510713785" duration="4926000" />
+      <workItem from="1550510713785" duration="5235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13553000" />
+    <option name="totallyTimeSpent" value="13862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,8 +366,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="1" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.52981967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
