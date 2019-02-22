@@ -155,6 +155,7 @@
     <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\Shared Assets\Scripts\DocLinks.cs" />
     <Compile Include="Assets\Script\CameraSystem.cs" />
     <Compile Include="Assets\Script\EnemyScript.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\MoveScript.cs" />
     <Compile Include="Assets\Script\NetworkManager.cs" />
     <Compile Include="Assets\Script\PlayerScript.cs" />

@@ -326,6 +326,7 @@
         <e p="Script" t="Include">
           <e p="CameraSystem.cs" t="Include" />
           <e p="EnemyScript.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="MoveScript.cs" t="Include" />
           <e p="NetworkManager.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />

@@ -19,6 +19,7 @@ namespace BestMasterYi
 
         void Start()
         {
+            DontDestroyOnLoad(gameObject);
             TriesToConnectToMaster = false;
             TriesToConnectToRoom = false;
         }
@@ -26,8 +27,10 @@ namespace BestMasterYi
         // Update is called once per frame
         void Update()
         {
-            ConnectToMaster.gameObject.SetActive(!PhotonNetwork.IsConnected && !TriesToConnectToMaster);
-            JoinRandomRoom.gameObject.SetActive(PhotonNetwork.IsConnected && !TriesToConnectToMaster && !TriesToConnectToRoom);                        
+            if(ConnectToMaster!=null)
+                ConnectToMaster.gameObject.SetActive(!PhotonNetwork.IsConnected && !TriesToConnectToMaster);
+            if (JoinRandomRoom!=null)
+                JoinRandomRoom.gameObject.SetActive(PhotonNetwork.IsConnected && !TriesToConnectToMaster && !TriesToConnectToRoom);                        
         }
 
         public void OnClickToMaster()
@@ -56,8 +59,6 @@ namespace BestMasterYi
             if (!PhotonNetwork.IsConnected)
                 return;
             TriesToConnectToRoom = true; 
-            //PhotonNetwork.CreateRoom("Peter's Game 1"); //Create a specific Room - Error: OnCreateRoomFailed
-            //PhotonNetwork.JoinRoom("Peter's Game 1");   //Join a specific Room   - Error: OnJoinRoomFailed  
             
             PhotonNetwork.JoinRandomRoom();               //Join a random Room     - Error: OnJoinRandomRoomFailed  
         }
@@ -67,7 +68,7 @@ namespace BestMasterYi
             base.OnJoinedRoom();
             TriesToConnectToRoom = false;
             Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
-            SceneManager.LoadScene("Stage");
+            PhotonNetwork.LoadLevel("Stage");
         }
          
         public override void OnJoinRandomFailed(short returnCode, string message)
