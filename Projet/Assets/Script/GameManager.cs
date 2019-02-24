@@ -10,6 +10,7 @@ namespace BestMasterYi
 {
     public class GameManager : MonoBehaviourPunCallbacks
     {
+    
         [Header("UC Game Manager")] public GameObject PlayerPrefab;
 
         [HideInInspector] public Player LocalPlayer;

@@ -177,8 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e542a142bb6b4a842b93ae5d82a42635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 7093506261216933313, guid: b3d3443e75696264686584f8429d2ec2,
-    type: 3}
+  shotPrefab: {fileID: 387, guid: b3d3443e75696264686584f8429d2ec2, type: 3}
   shotPrefab2: {fileID: 7339689191114626214, guid: a3147e30b2deae24394e2f645e8a7460,
     type: 3}
   facingRight: 1
@@ -268,4 +267,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
+  m_SynchronizeScale: 1
