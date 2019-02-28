@@ -16,8 +16,8 @@ namespace BestMasterYi
         public bool TriesToConnectToMaster;
         public bool TriesToConnectToRoom;
         
-        private string scene =  "Hero";
-        private string perso = "Stage1";
+        private string scene = "Stage1";
+        private string perso = "Hero";
 
         public string Perso
         {
