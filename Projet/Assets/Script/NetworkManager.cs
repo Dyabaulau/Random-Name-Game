@@ -16,7 +16,15 @@ namespace BestMasterYi
         public bool TriesToConnectToMaster;
         public bool TriesToConnectToRoom;
         
-        private string scene = "Stage1";
+        private string scene =  "Hero";
+        private string perso = "Stage1";
+
+        public string Perso
+        {
+            get => perso;
+            set => perso = value;
+        }
+
         public string Scene
         {
             get => scene;
@@ -76,6 +84,7 @@ namespace BestMasterYi
             TriesToConnectToRoom = false;
             Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
             PhotonNetwork.LoadLevel(Scene);
+            GetComponent<GameManager>().localPlayer = perso;
         }
          
         public override void OnJoinRandomFailed(short returnCode, string message)

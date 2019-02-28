@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LotteryScene.unity
     guid: 62d924a9d876a9f47a3acae4bfb26d3e
   - enabled: 1
+    path: Assets/Scenes/CharacterSelect.unity
+    guid: 8c3df216090fe814483418c864892357
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 49d99b489b6da1e4bb2a74b91fa1a33a
   - enabled: 1

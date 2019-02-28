@@ -9,13 +9,15 @@ namespace BestMasterYi
     public class SwitchScene : MonoBehaviour
     {
         public int Scene;
-
-        public void Sceneload(int Scene)
+        public string Perso;
+        
+        public void Sceneload()
         {
             if (SceneManager.GetActiveScene().name == "DungeonSelect")
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(4);
                 GetComponent<NetworkManager>().Scene = SceneManager.GetSceneByBuildIndex(Scene).name;
+                
             }
             else
                 SceneManager.LoadScene(Scene);

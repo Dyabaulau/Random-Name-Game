@@ -332,6 +332,7 @@
           <e p="PlayerScript.cs" t="Include" />
           <e p="Shot.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
+          <e p="SummonScript.cs" t="Include" />
           <e p="SwitchScene.cs" t="Include" />
           <e p="Vie.cs" t="Include" />
           <e p="WeaponScript.cs" t="Include" />
