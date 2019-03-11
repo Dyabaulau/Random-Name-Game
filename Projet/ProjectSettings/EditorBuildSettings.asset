@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ed3cbf66acac0894da6624e41e7cfbc8
   - enabled: 1
+    path: Assets/Scenes/LotteryScene.unity
+    guid: 62d924a9d876a9f47a3acae4bfb26d3e
+  - enabled: 1
     path: Assets/Scenes/DungeonSelect.unity
     guid: af41f69928323d94eb66c527df0e73d3
   - enabled: 1
-    path: Assets/Scenes/LotteryScene.unity
-    guid: 62d924a9d876a9f47a3acae4bfb26d3e
+    path: Assets/Scenes/CharacterSelect.unity
+    guid: dab891367b6bff94fab09759f1c1f2dc
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 49d99b489b6da1e4bb2a74b91fa1a33a

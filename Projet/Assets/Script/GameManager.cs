@@ -20,6 +20,7 @@ namespace BestMasterYi
             if (!PhotonNetwork.IsConnected)
             {
                 PhotonNetwork.LoadLevel("Menu");
+                PlayerPrefab = GameObject.Find(PersistantManagerScript.Instance.perso);
                 return;
             }
         }

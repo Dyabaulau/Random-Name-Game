@@ -161,6 +161,7 @@
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\MoveScript.cs" />
     <Compile Include="Assets\Script\NetworkManager.cs" />
+    <Compile Include="Assets\Script\PersistantManagerScript.cs" />
     <Compile Include="Assets\Script\PlayerScript.cs" />
     <Compile Include="Assets\Script\Shot.cs" />
     <Compile Include="Assets\Script\Sound.cs" />

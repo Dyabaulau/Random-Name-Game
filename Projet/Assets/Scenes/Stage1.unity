@@ -1140,7 +1140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.14, y: -7.69, z: -5}
+  m_LocalPosition: {x: -10.75, y: -11.82, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1534,6 +1534,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5420303, y: 1.3687735}
   m_EdgeRadius: 0
+--- !u!1 &835215542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835215544}
+  - component: {fileID: 835215543}
+  m_Layer: 0
+  m_Name: PersistantManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &835215543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835215542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c8a5414bdea734ab8d98f3260b602d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summoned: []
+  money: 0
+  perso: Hero
+  level: Stage1
+--- !u!4 &835215544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835215542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 243.88232, y: 209.62665, z: -1.8558072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &892568209
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2307,7 @@ GameObject:
   - component: {fileID: 1504242674}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3306,12 +3353,12 @@ PrefabInstance:
     - target: {fileID: 1203354817987471270, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.76
+      value: -9.712
       objectReference: {fileID: 0}
     - target: {fileID: 1203354817987471270, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.93
+      value: -12.124
       objectReference: {fileID: 0}
     - target: {fileID: 1203354817987471270, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
@@ -3361,12 +3408,12 @@ PrefabInstance:
     - target: {fileID: 1203354817987471270, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1203354817987471270, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 927015604023623378, guid: 3fe3718463769b645ab98bb1a876fd0f,
         type: 3}
