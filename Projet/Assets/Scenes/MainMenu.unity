@@ -512,7 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c8a5414bdea734ab8d98f3260b602d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  summoned: []
+  summoned:
+  - Hero
   money: 0
   perso: 
   level: 

@@ -14,41 +14,19 @@ namespace BestMasterYi
         public List<string> Rcharacter;
         public List<string> Ccharacter;
 
-        public List<string> character;
-        private HashSet<string> summoned;
-        
-        
-        public HashSet<string> Summoned
-        {
-            get => summoned;
-            set => summoned = value;
-        }
-
-        private int n = 0;
+        private int n;
         public int M;
         public int R;
 
         public void Pull()
         {
-            n = Random.Range(0, 100);
+            n = Random.Range(0, 101);
             if (n <= M)
-                unlock(Mcharacter[Random.Range(0, Mcharacter.Count - 1)]);
+                PersistantManagerScript.Instance.summoned.Add(Mcharacter[Random.Range(0, Mcharacter.Count - 1)]);
             else if (n<=M+R)
-                unlock(Rcharacter[Random.Range(0, Rcharacter.Count - 1)]);
+                PersistantManagerScript.Instance.summoned.Add(Rcharacter[Random.Range(0, Rcharacter.Count - 1)]);
             else
-                unlock(Ccharacter[Random.Range(0, Ccharacter.Count - 1)]);
-        }
-
-        public void unlock(string name)
-        {
-            foreach (var c in summoned)
-            {
-                if (c == name)
-                {
-                    return;
-                }
-            }
-            Summoned.Add(name);  
+                PersistantManagerScript.Instance.summoned.Add(Ccharacter[Random.Range(0, Ccharacter.Count - 1)]);
         }
     }
 }

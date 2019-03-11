@@ -10,13 +10,28 @@ namespace BestMasterYi
     {
         public string Scene;
         public string Perso;
+
+        private int n;
         
         public void Sceneload()
         {
-            if (SceneManager.GetActiveScene().name == "CharacterSelect")
-            {
-                PersistantManagerScript.Instance.perso = Perso;
+            if (Scene == "MainMenu")
                 SceneManager.LoadScene(Scene);
+            
+            else if (SceneManager.GetActiveScene().name == "CharacterSelect")
+            {
+                n = 0;
+                foreach (var c in PersistantManagerScript.Instance.summoned)
+                {
+                    if (c == Perso)
+                        n += 1;
+                }
+
+                if (n >= 1)
+                {
+                    PersistantManagerScript.Instance.perso = Perso;
+                    SceneManager.LoadScene(Scene);
+                }
             }
             else if (SceneManager.GetActiveScene().name == "DungeonSelect")
             {
