@@ -22,11 +22,11 @@ namespace BestMasterYi
         {
             n = Random.Range(0, 101);
             if (n <= M)
-                PersistantManagerScript.Instance.summoned.Add(Mcharacter[Random.Range(0, Mcharacter.Count - 1)]);
+                PersistantManagerScript.Instance.summoned.Add(Mcharacter[Random.Range(0, Mcharacter.Count)]);
             else if (n<=M+R)
-                PersistantManagerScript.Instance.summoned.Add(Rcharacter[Random.Range(0, Rcharacter.Count - 1)]);
+                PersistantManagerScript.Instance.summoned.Add(Rcharacter[Random.Range(0, Rcharacter.Count)]);
             else
-                PersistantManagerScript.Instance.summoned.Add(Ccharacter[Random.Range(0, Ccharacter.Count - 1)]);
+                PersistantManagerScript.Instance.summoned.Add(Ccharacter[Random.Range(0, Ccharacter.Count)]);
         }
     }
 }

@@ -515,8 +515,8 @@ MonoBehaviour:
   summoned:
   - Hero
   money: 0
-  perso: 
-  level: 
+  perso: Hero
+  level: Stage1
 --- !u!4 &1071254394
 Transform:
   m_ObjectHideFlags: 0

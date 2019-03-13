@@ -13,6 +13,7 @@ namespace BestMasterYi
     
         [Header("UC Game Manager")] public GameObject PlayerPrefab;
 
+        public List<GameObject> Prefabs;
         [HideInInspector] public string localPlayer;
 
         private void Awake()
@@ -20,7 +21,7 @@ namespace BestMasterYi
             if (!PhotonNetwork.IsConnected)
             {
                 PhotonNetwork.LoadLevel("Menu");
-                PlayerPrefab = GameObject.Find(PersistantManagerScript.Instance.perso);
+                //PlayerPrefab = GameObject.Find(PersistantManagerScript.Instance.perso);
                 return;
             }
         }
@@ -28,6 +29,11 @@ namespace BestMasterYi
         // Use this for initialization
         void Start()
         {
+            foreach (var p in Prefabs)
+            {
+                if (p.name == PersistantManagerScript.Instance.perso)
+                    PlayerPrefab = p;
+            }
             if (PlayerPrefab == null)
             {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'",this);
